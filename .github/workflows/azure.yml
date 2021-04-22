@@ -47,8 +47,6 @@ jobs:
       with:
         # Name of the Azure Function App
         app-name: HelloActions
-        # Path to package or folder. *.zip or a folder to deploy
-        package: dist
         # Publish profile (*.publishsettings) file contents with web deploy secrets
         publish-profile: ${{secret.PUBLISH_PROFILE}}
         # Remove unwanted files defined in .funcignore file (default: 'false'). When this is set to 'true', 'package' should point to the folder of host.json.
